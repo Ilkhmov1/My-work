@@ -1,0 +1,137 @@
+@import "./fonts.css";
+
+:root {
+  --MR: "Montserrat-Regular", sans-serif;
+  --MSB: "Montserrat-SemiBold", sans-serif;
+  --MBI: "Montserrat-BoldItalic", sans-serif;
+  --MB: "Montserrat-Black", sans-serif;
+  --TB: "trebuchet-ms-bold", sans-serif;
+  --TBI: "trebuchet-ms-bold-italic", sans-serif;
+  --blue: #7177f1;
+  --white: #fff;
+  --black: #323232;
+  --bg: #151437;
+  --bluuu: #0d6efd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 13px;
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: var(--TB);
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--blue) !important;
+}
+
+.logo__line {
+  position: absolute;
+  height: 1px;
+}
+
+.logo__line:nth-of-type(1),
+.logo__line:nth-of-type(2),
+.logo__line:nth-of-type(3) {
+  background-color: var(--black);
+}
+
+.logo__line:nth-of-type(1) {
+  width: 18px;
+  top: 6px;
+  left: -19px;
+}
+
+.logo__line:nth-of-type(2) {
+  width: 27px;
+  top: 14px;
+  left: -30px;
+}
+
+.logo__line:nth-of-type(3) {
+  width: 36px;
+  bottom: 4px;
+  left: -41px;
+}
+
+.logo__line:nth-of-type(4),
+.logo__line:nth-of-type(5) {
+  width: 27px;
+  background: var(--blue);
+  filter: blur(0.7px);
+  right: -32px;
+}
+
+.logo__line:nth-of-type(4) {
+  top: 7px;
+}
+
+.logo__line:nth-of-type(5) {
+  bottom: 4px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background: #828282;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 0;
+  opacity: 1;
+  transition: .3s;
+}
+
+.carousel-indicators .active {
+  background: var(--blue);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.h2 {
+  color: var(--bluuu);
+}
+
+.nav-tabs .nav-link {
+  width: 100%;
+  padding: 15px 20px !important;
+  background-color: var(--white);
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: var(--bluuu) !important;
+  color: var(--white) !important;
+}
+
+.works__img {
+  max-height: 600px;
+  height: 100%;
+  width: auto;
+}
+
+footer .navbar-brand {
+  width: max-content;
+  display: block;
+  height: 34px;
+  margin: 0 auto 20px !important;
+}
+.footer__link{
+  text-decoration: none;
+}
